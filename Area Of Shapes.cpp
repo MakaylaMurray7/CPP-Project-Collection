@@ -13,7 +13,7 @@ void calculateAreaOfShapes()
     int decision;
     string repeatChoice;
     string exitAnswer;
-    bool exitProgram;
+    bool exitProgram = false;
     double lengthOfSquare, areaOfSquare, triangleBase, triangleHeight,
     areaOfTriangle, circleDiameter, areaOfCircle;
     const double PI = 3.1415927;

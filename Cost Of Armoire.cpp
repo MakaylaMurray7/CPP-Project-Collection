@@ -11,46 +11,31 @@ void get_measurements(double &length, double &depth, double &height)
 {
     cout << "Enter the length of the Armoire (in inches), must be more than 18 inches: ";
     cin >> length;
-    if (cin.fail())
-    {
+    while(cin.fail() || length < 18)
+    {        
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "\nInvalid input, you must enter a numeric value.\n";
-        waitForKeyPress();
-    }
-    while(length < 18)
-    {
-            cout << "Invalid input, size is out of range. The length of the Armoire must be more than 18 inches.\n";
-            cout << "Enter the length of the Armoire (in inches), must be more than 18 inches: ";
-            cin >> length;
+        cout << "Invalid input, length must be a numeric value greater than 18 inches.\n";
+        cout << "Enter the length of the Armoire (in inches), must be more than 18 inches: ";
+        cin >> length;
     }
     cout << "Enter the depth of the Armoire (in inches), must be more than 18 inches: ";
     cin >> depth;
-    if (cin.fail())
-    {
+    while(cin.fail() || depth < 18)
+    {       
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "\nInvalid input, you must enter a numeric value.\n";
-        waitForKeyPress();
-    }
-    while(depth < 18)
-    {
-        cout << "Invalid input, size is out of range. The depth of the Armoire must be more than 18 inches.\n";
+        cout << "Invalid input, depth must be a numeric value greater than 18 inches.\n";
         cout << "Enter the depth of the Armoire (in inches), must be more than 18 inches: ";
         cin >> depth;
     }
     cout << "Enter the height of the Armoire (in inches), must be between [18-60] inches: ";
     cin >> height;
-    if (cin.fail())
-    {
+    while(cin.fail() || height < 18 || height > 60)
+    {       
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "\nInvalid input, you must enter a numeric value.\n";
-        waitForKeyPress();
-    }
-    while(height < 18 || height > 60)
-    {
-        cout << "Invalid input, size is out of range. The height of the Armoire must be more than 18 inches and less 60 inches.\n";
+        cout << "Invalid input, height must be a numeric value greater than 18 inches and less than 60 inches.\n";
         cout << "Enter the height of the Armoire (in inches), must be between [18-60] inches: ";
         cin >> height;
     }
@@ -58,7 +43,7 @@ void get_measurements(double &length, double &depth, double &height)
 
 double calc_Large_Volume(double length, double depth, double height)
 {
-    double cubicAdditionalCharge;
+    double cubicAdditionalCharge = 0;
     double cubicVolume = length * depth * height;
     if (cubicVolume > 25000)
     {
