@@ -31,7 +31,7 @@ void linearSearch(int arr[], int Size, int SearchValue, int &Comparisons)
         Comparisons++;
         if(arr[index] == SearchValue)
         {
-            break;
+            return;
         }
     }
 }
@@ -47,9 +47,9 @@ void binarySearch(int arr[], int Size, int SearchValue, int &comparisons)
         middle = (first + last)/2;
         if(arr[middle] == SearchValue)
         {
-            break;
+            return;
         }
-        else if (arr[middle] < SearchValue)
+        else if (arr[middle] > SearchValue)
             last = middle - 1;
         else
             first = middle + 1;
