@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
-#includ <limits>
+#include <limits>
 #include "Wait For Key Press.h"
 
 using namespace std;
