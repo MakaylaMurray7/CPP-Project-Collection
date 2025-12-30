@@ -1,0 +1,72 @@
+# depslib dependency file v1.0
+1733845838 source:c:\users\makay\onedrive\documents\final project\main.cpp
+	<iostream>
+	"Main Menu.h"
+
+1733845838 c:\users\makay\onedrive\documents\final project\main menu.h
+
+1733849217 source:c:\users\makay\onedrive\documents\final project\clearscreen.cpp
+	<iostream>
+	<iomanip>
+	<windows.h>
+
+1767049915 source:c:\users\makay\onedrive\documents\final project\area of shapes.cpp
+	"Area Of Shapes.h"
+	"ClearScreen.h"
+	"Wait For Key Press.h"
+	<iostream>
+	<cmath>
+	<iomanip>
+	<limits>
+
+1733853744 c:\users\makay\onedrive\documents\final project\area of shapes.h
+
+1733852775 c:\users\makay\onedrive\documents\final project\clearscreen.h
+
+1767049941 source:c:\users\makay\onedrive\documents\final project\cost of armoire.cpp
+	<iostream>
+	<iomanip>
+	"Cost Of Armoire.h"
+	"ClearScreen.h"
+	"Wait For Key Press.h"
+	<limits>
+
+1733852757 c:\users\makay\onedrive\documents\final project\cost of armoire.h
+
+1766601490 source:c:\users\makay\onedrive\documents\final project\main menu.cpp
+	<iostream>
+	<limits>
+	"Main Menu.h"
+	"ClearScreen.h"
+	"Area Of Shapes.h"
+	"Cost Of Armoire.h"
+	"Search and Sort Arrays.h"
+	"Password Validation.h"
+	"Wait For Key Press.h"
+
+1733862826 c:\users\makay\onedrive\documents\final project\search and sort arrays.h
+
+1733862910 c:\users\makay\onedrive\documents\final project\password validation.h
+
+1767049915 source:c:\users\makay\onedrive\documents\final project\search and sort arrays.cpp
+	"Search and Sort Arrays.h"
+	"ClearScreen.h"
+	<iostream>
+	"Wait For Key Press.h"
+	<limits>
+
+1766614270 source:c:\users\makay\onedrive\documents\final project\password validation.cpp
+	"Password Validation.h"
+	"ClearScreen.h"
+	<iostream>
+	<cstring>
+	<cctype>
+	"Wait For Key Press.h"
+
+1766601451 source:c:\users\makay\onedrive\documents\final project\wait for key press.cpp
+	<iostream>
+	<string>
+	"Wait For Key Press.h"
+
+1733880676 c:\users\makay\onedrive\documents\final project\wait for key press.h
+

@@ -1,0 +1,6 @@
+#ifndef WAIT_FOR_KEY_PRESS_H_INCLUDED
+#define WAIT_FOR_KEY_PRESS_H_INCLUDED
+
+void waitForKeyPress();
+
+#endif // WAIT_FOR_KEY_PRESS_H_INCLUDED
