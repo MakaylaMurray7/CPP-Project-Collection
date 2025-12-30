@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
+#includ <limits>
 #include "Wait For Key Press.h"
 
 using namespace std;
@@ -14,10 +15,11 @@ void verifyPassword(const char password[], bool&validPassword)
     digit = false,
     specCharacters = false;
     validPassword = true;
-    const char specChar[] = "?#%&!@{}\^";
+    const char specChar[] = "?#%&!@{}\\^";
     if(strlen(password) < 5)
     {
         cout << "Password must at least be five characters long." << endl;
+        validPassword = false;
     }
     for(int index = 0; index < strlen(password); index++)
     {
@@ -83,7 +85,7 @@ void passwordValidation()
         cout << "At least 1 digit" << endl;
         cout << "Contains at least one of the following ten characters: ?#%&!@{}^\ " << endl;
         cout << "Enter password: ";
-        cin.ignore();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         cin.getline(password,SIZE);
         verifyPassword(password, valid);
         waitForKeyPress();
